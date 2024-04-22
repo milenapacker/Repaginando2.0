@@ -1,7 +1,5 @@
-//exemplo de função de outro arquivo sendo usada aqui:
-// main.js
-const { getAndPrintRandomPhrase } = require('./Frases');
-const pool = require('./Database');
+import { getAndPrintRandomPhrase } from './Frases';
+import pool from './Database';
 
 async function main() {
     await getAndPrintRandomPhrase();
